@@ -1,0 +1,192 @@
+body {
+	background-color: #000;
+  	/* background-color: #686765; */
+  	color: rgb(26, 188, 156);
+  	font-family: Roboto, arial, sans-serif;
+  	font-size: 32px;
+  	margin: 0;
+  	text-align: center;
+}
+
+#header {
+	cursor: pointer;
+	margin-top: 0; 
+	text-align: left;
+}
+
+#header span a {
+	color: rgb(26, 188, 156);
+	letter-spacing: 4px;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(26, 188, 156, 1);
+	padding-bottom: 3px;
+}
+
+#header span a:hover {
+	text-decoration: none;
+	border: none;
+}
+
+h1 {
+	color: rgb(26, 188, 156);
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+	padding: 10px 0 40px 10px;
+}
+
+#session, #break {
+	display: inline-block;
+}
+
+.session-up, .workTimeView, .session-down {
+	display: inline-block;
+}
+
+.session-up:hover, .session-down:hover {
+	transform: scale(1.1);
+}
+
+#timer {
+	font-family: 'Roboto', sans-serif;
+	font-size: 150px;
+	padding: 55px 0 40px 0;
+}
+
+#timerBar {
+	margin: 0 auto;
+	width: 500px;
+}
+
+.timer-bar {
+	background-color: rgba(136, 136, 136, 1);
+	height: 4px;
+}
+
+.progress-bar {
+	background-color: #f00;
+	height: 4px;
+	z-index: 10;
+	width: 85%;
+}
+
+.progress-bar:hover {
+	transition: transform .1s cubic-bezier(0.0,0.0,0.2,1)
+}
+
+.scrubber-container {
+	position: relative;
+	top: -6.5px;
+	left: -6.5px;
+	z-index: 10;
+}
+
+.scrubber-button {
+	height: 8px;
+	width: 8px;
+	border-radius: 20px;
+	background-color: #f00;
+}
+
+.scrubber-pull-indicator {
+	position: absolute;
+	bottom: 16.9px;
+	left: 6.5px;
+	transform: rotate(45deg);
+}
+
+.scrubber-pull-indicator::after {
+	display: none;
+	border-radius: 6px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	background: blue;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-container {
+	display:inline-block;
+}
+
+.icons {
+	margin: 0;
+	padding: 5px 7px;
+	/* padding: 0 10px 25px 10px; */
+	opacity: .5;
+	transition: all .07s ease;
+}
+
+.caption {
+	opacity: 0;
+	padding-top: 30px;
+	/* transition: all 0.1s ease-in-out; */
+	transition: transform 275ms;
+}
+
+.icon-container:hover .caption {
+	opacity: 1;
+	transform: translateY(-20px);
+}
+
+.icons:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 10px 4px #fff;
+	transform: scale(1.1);
+}
+
+
+.icons-lighten {
+	opacity: 1;
+}
+
+#navigator {
+	/* bottom: 20px;
+	position: fixed; */
+	width: 100%;
+	padding-bottom: 40px;
+}
+
+.navigator-center {
+	margin: 0 auto;
+}
+
+/* .frosted-glass {
+	z-index: 1;
+	filter: blur(.2px);
+}
+
+.frosted-glass:hover {
+	box-shadow: inset 0 0 500px rgba(26, 188, 156, 0.5);
+} */
+
+.tab {
+	border-radius: 40px;
+	/* border-bottom: 3px solid rgb(26, 188, 156);
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;*/
+}
+
+.tab-active {
+	/* background: radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.45));*/
+	background: radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.45));
+}
+}
+
+.tab:hover {
+	transform: scale(1.1);
+}
+
+.keyboard, .coffee {
+	border: 2px solid;
+	padding: 10px 8px;
+}
+
+.frosted-glass>i:hover {
+	box-shadow: 0px 0px 10px 4px #fff;
+	transform: scale(1.1);
+}

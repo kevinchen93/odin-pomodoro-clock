@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta http-equiv="Content-type" content="text/html" charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>POMODORO CLOCK</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script src="https://use.fontawesome.com/f4bd237345.js"></script>
+		<link href="https://use.fontawesome.com/f4bd237345.css" media="all" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="pomodoro-clock.css">
+</head>
+
+<body>
+	<div id="header">
+		<h1>
+			<span><a href="#">POMODORO</a></span>
+		</h1>
+	</div>
+	<div id="container">
+
+		<div id="navigator">
+			<span class="navigator-center">
+				<span class="frosted-glass">
+					<i class="fa fa-keyboard-o tab tab-active keyboard">
+						<a></a>
+					</i>
+					<i class="fa fa-coffee tab tab-active coffee">
+						<a></a>
+					</i>
+				</span>
+			</span>
+		</div>
+		<div id="session">
+			<div class="session-up">
+				<i class="fa fa-caret-left" aria-hidden="true"></i>
+			</div>
+			<div class="workTimeView">[number]</div>
+			<div class="session-down">
+				<i class="fa fa-caret-right" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div id="timer">[time]</div>
+
+		<!-- insert time bar here 
+			 similar to the one in youtube's thumbnails
+			 two time bars - one static, one dynamic 
+			 include that dot at the beginning -->
+
+		<div id="timerBar">
+			<div class="timer-bar">
+				<div class="progress-bar">
+				</div>
+			</div>
+			<div class="scrubber-container" style="transform: translateX(500px);">
+				<div class="scrubber-button">
+					<div class="scrubber-pull-indicator">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ^^^ scrubber-container is extending past viewport -->
+		
+		<div id="icons"> 
+			<div class="icon-container">
+				<i class="fa fa-play fa-2x icons" aria-hidden="true"></i>
+				<div class="caption">PLAY</div>
+			</div>
+			<div class="icon-container">
+				<i class="fa fa-pause fa-2x icons" aria-hidden="true"></i>
+				<div class="caption">PAUSE</div>
+			</div>
+			<div class="icon-container">
+				<i class="fa fa-stop fa-2x icons" aria-hidden="true"></i>
+				<div class="caption">STOP</div>
+			</div>
+			<div class="icon-container">
+				<i class="fa fa-refresh fa-2x icons" aria-hidden="true"></i>
+				<div class="caption">REFRESH</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="pomodoro-clock.js"></script>
+</body>
+</html>
