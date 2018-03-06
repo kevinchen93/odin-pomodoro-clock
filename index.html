@@ -21,10 +21,10 @@
 		<div id="navigator">
 			<span class="navigator-center">
 				<span class="frosted-glass">
-					<i class="fa fa-keyboard-o tab tab-active keyboard">
+					<i class="fa fa-keyboard-o tab keyboard highlight">
 						<a></a>
 					</i>
-					<i class="fa fa-coffee tab tab-active coffee">
+					<i class="fa fa-coffee tab coffee">
 						<a></a>
 					</i>
 				</span>
@@ -32,19 +32,17 @@
 		</div>
 		<div id="session">
 			<div class="session-up">
-				<i class="fa fa-caret-left" aria-hidden="true"></i>
+				<i class="fa fa-caret-left decBtn" aria-hidden="true"></i>
 			</div>
-			<div class="workTimeView">[number]</div>
+			<div class="workTimeView"></div>
 			<div class="session-down">
-				<i class="fa fa-caret-right" aria-hidden="true"></i>
+				<i class="fa fa-caret-right incBtn" aria-hidden="true"></i>
 			</div>
 		</div>
-		<div id="timer">[time]</div>
 
-		<!-- insert time bar here 
-			 similar to the one in youtube's thumbnails
-			 two time bars - one static, one dynamic 
-			 include that dot at the beginning -->
+		<div class="timeView">[time]</div>
+
+		<!--
 
 		<div id="timerBar">
 			<div class="timer-bar">
@@ -59,24 +57,19 @@
 			</div>
 		</div>
 
-		<!-- ^^^ scrubber-container is extending past viewport -->
+		-->
+
+		<!-- ^^^ scrubber-container is extending past viewport 
+				 fix that width -->
 		
 		<div id="icons"> 
 			<div class="icon-container">
-				<i class="fa fa-play fa-2x icons" aria-hidden="true"></i>
-				<div class="caption">PLAY</div>
-			</div>
-			<div class="icon-container">
 				<i class="fa fa-pause fa-2x icons" aria-hidden="true"></i>
-				<div class="caption">PAUSE</div>
-			</div>
-			<div class="icon-container">
-				<i class="fa fa-stop fa-2x icons" aria-hidden="true"></i>
-				<div class="caption">STOP</div>
+				<div class="caption caption-1">PAUSE</div>
 			</div>
 			<div class="icon-container">
 				<i class="fa fa-refresh fa-2x icons" aria-hidden="true"></i>
-				<div class="caption">REFRESH</div>
+				<div class="caption caption-2">REFRESH</div>
 			</div>
 		</div>
 	</div>

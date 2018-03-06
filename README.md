@@ -12,7 +12,7 @@ I will do my best!
 
 ## Post-Project Thoughts
 
-One thing to improve upon is writing cleaner and more readable code.
+One thing to improve upon is writing cleaner and more readable code and approaching the project from different ways.
 I will learn that later on in the curriculum.
 
 Skills I demonstrated or strengthened at project end: <br>
@@ -24,7 +24,5 @@ Skills I demonstrated or strengthened at project end: <br>
 -Manipulating HTML elements through the use of the Document Object Model (DOM) <br>
 -Use of the `switch` statement <br>
 -Use of `if...else` statements <br>
--Use of event handlers such as `addEventListener` and `removeEventListener` <br>
+-Use of event handlers such as `addEventListener`<br>
 -Familiarity with `this` keyword
-
-Known bugs (and possibly more) that I will return to fix in the future:
